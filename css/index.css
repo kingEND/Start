@@ -15,3 +15,30 @@
 .item.active {
     background-color: #fbfbfb;
 }
+
+
+/*定义卡片的样式*/
+
+.card {
+    width: 300px;
+    height: 200px;
+    margin: 0px auto;
+    background-color: #fafafa;
+}
+.card + .card {
+    margin-top: 10px;
+}
+.card.header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: 1px solid #ebebeb;
+}
+.card.body {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
