@@ -30,7 +30,8 @@
 }
 .card.header {
     width: 100%;
-    height: auto;
+    height: 48px;
+    line-height: 48px;
     text-align: center;
     display: block;
     box-sizing: border-box;
