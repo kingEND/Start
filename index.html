@@ -1,19 +1,23 @@
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no"/>
-        <link rel="stylesheet" href="./css/index.css">
-    </head>
-    <body>
-        <!--导航栏-->
-        <div id='test' class="menu">
-            <div class="item active">首页</div>
-            <div class="item">前端</div>
-            <div class="item">后端</div>
-            <div class="item">经济</div>
-        </div>
-        <!--主页内容-->
 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/flex.css"/>
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+    <!--导航栏-->
+    <div id='test' class="menu">
+        <div class="item active">首页</div>
+        <div class="item">前端</div>
+        <div class="item">后端</div>
+        <div class="item">经济</div>
+    </div>
+    <!--主页内容-->
+    <div  flex='wrap' row='between' class="container">
         <div class="card">
             <div class="card header">
                 <h3>数组常用的函数总结</h3>
@@ -22,6 +26,7 @@
                 <a href="./b/js/2017050301">数组常用的函数总结</a>
             </div>
         </div>
+
         <div class="card">
             <div class="card header">
                 <h3>字符常用的函数总结</h3>
@@ -30,6 +35,7 @@
                 <a href="./b/js/20170503">字符常用的函数总结</a>
             </div>
         </div>
+
         <div class="card">
             <div class="card header">
                 <h3>有关js读取word文档的初步尝试</h3>
@@ -38,6 +44,17 @@
                 <a href="./b/shixi/20170503">有关js读取word文档的初步尝试</a>
             </div>
         </div>
-    </body>
-    <script src="./js/index.js"></script>
+
+        <div class="card">
+            <div class="card header">
+                <h3>正则表达式的学习--基础篇</h3>
+            </div>
+            <div class="card body">
+                <a href="./b/shixi/20170504">正则表达式的学习--基础篇</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+
 </html>

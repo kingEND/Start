@@ -1,0 +1,10 @@
+/*这个样式主要编写基础的*/
+
+
+/*定义根元素，让子类能继承使用100%*/
+/*适应手机端*/
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: #ebebeb;
+}

@@ -1,0 +1,67 @@
+
+/*flex布局的样式*/
+/*在这里使用属性布局*/
+/*定义flex布局和设置默认值，规定换行属性*/
+[flex] {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+[flex = 'wrap'] {
+    flex-wrap: wrap; 
+}
+[flex = 'rwrap'] {
+    flex-wrap: wrap-reverse;
+}
+
+/*定义flex布局的水平方向*/
+[row] {
+    justify-content: center;
+}
+[row='start'] {
+    justify-content: flex-start;
+}
+[row='end'] {
+    justify-content: flex-end;
+}
+[row='around'] {
+    justify-content: space-around;
+}
+[row='between'] {
+    justify-content: space-between;
+}
+
+/*定义flex布局的垂直方向 单行为col*/
+[col] {
+    align-items: center;
+}
+[col ='start'] {
+    align-items: flex-start;
+}
+[col ='end'] {
+    align-items: flex-end;
+}
+[col = 'stretch'] {
+    align-items: stretch;
+}
+[col = 'baseline'] {
+    align-items: baseline;
+}
+
+/*多行为 cols*/
+[cols] {
+    align-content: center;
+}
+[cols = 'start'] {
+    align-content: flex-start;
+}
+[cols = 'end'] {
+    align-content: flex-end;
+}
+[cols = 'stretch'] {
+    align-content: stretch;
+}
+[cols = 'baseline'] {
+    align-content: baseline;
+}
+/*子元素的布局方式*/
