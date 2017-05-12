@@ -1,4 +1,5 @@
 
+// 获取菜单的dom
 let MenuNode = document.getElementsByClassName('menu');
 let itemNode = MenuNode[0].children;
 
@@ -11,3 +12,7 @@ console.log(itemNode);
 console.log(Menu);
 console.log(item);
 // console.log(itemNode);
+
+// for(let i=0; i< itemNode.length; i++) {
+//   console.log(itemNode[i].classList.remove('active'))
+// }
