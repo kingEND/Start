@@ -88,3 +88,16 @@
     height: 100%;
     border-radius: 50%;
 }
+
+/*定义标题*/
+.text-header {
+    width: 100%;
+    margin: auto;
+    line-height: 48px;
+    text-align: left;
+    color: black;
+}
+
+[line] {
+    border-bottom: 1px solid #999;
+}

@@ -1,18 +1,17 @@
 
-// 获取菜单的dom
-let MenuNode = document.getElementsByClassName('menu');
-let itemNode = MenuNode[0].children;
+// 菜单的js操作
 
-// id 测试
-let Menu = document.getElementById('test');
-let item = Menu.getElementsByClassName('item');
+var Menu = {
+    init: function () {
+        // 初始化菜单，在这里绑定对应的事件
+        $('.menu').find('.item').click(Menu.changeItem);
+    },
+    changeItem: function () {
+        // 改变选项的活动类
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active').closest('.menu').find('.item').not(this).removeClass('active')
+        }
+    }
+}
 
-console.log(MenuNode);
-console.log(itemNode);
-console.log(Menu);
-console.log(item);
-// console.log(itemNode);
-
-// for(let i=0; i< itemNode.length; i++) {
-//   console.log(itemNode[i].classList.remove('active'))
-// }
+Menu.init();
