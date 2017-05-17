@@ -64,4 +64,17 @@
 [cols = 'baseline'] {
     align-content: baseline;
 }
+
+/*定义绝对布局的属性*/
+[fixed] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*绝大多数的时候fixed布局会遮住一些导航栏*/
+[fixed] ~ .menu {
+    margin-top: 68px;
+}
 /*子元素的布局方式*/
